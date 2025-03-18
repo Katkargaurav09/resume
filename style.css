@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  height: auto;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  scroll-behavior: smooth;
+}
+/* Footer */
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  background-color: #009688;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+}
+.footer > p {
+  color: white;
+}
+.social-icons > a > i {
+  color: white;
+}
+a:hover {
+  color: #009688;
+  text-decoration: underline;
+}
+
+.social-icons > i:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+/* resume download */
+.resume-btn {
+  position: fixed;
+  background-color: #009688;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: inline-block;
+  bottom: 3%;
+  right: 3%;
+}
+
+.resume-btn:hover {
+  background-color: #00796b;
+}
+
+/* container */
+.container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+/* left-container-info */
+.left-info {
+  flex-basis: 25%;
+  background: white;
+  border: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 0px 5px 3px #c6c5c5;
+}
+.image,
+img {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.name > h2 {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+}
+.info {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Social Info */
+.social-info {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+}
+a {
+  color: #424242;
+  text-decoration: none;
+}
+p {
+  color: #424242;
+}
+i {
+  color: #009688;
+}
+.job,
+.location,
+.email,
+.phone {
+  display: flex;
+  gap: 10px;
+}
+/* Skill info and language info */
+.skills-info {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.skills,
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skills > p,
+.languages > p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.skills-data,
+.language-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skills-data > div {
+  width: 100%;
+  border-radius: 16px;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+.skills-data > div > div {
+  font-size: 15px;
+}
+.skills-data > .htmlcss > div {
+  width: 80%;
+  max-width: 100%;
+  overflow: hidden;
+  animation: growBar 1s ease-in-out forwards;
+  border-radius: 16px;
+  background-color: #009688;
+}
+.skills-data > .js > div {
+  width: 70%;
+  max-width: 100%;
+  overflow: hidden;
+  animation: growBar 1s ease-in-out forwards;
+  border-radius: 16px;
+  background-color: #009688;
+}
+
+.skills-data > .react > div {
+  width: 60%;
+  max-width: 100%;
+  overflow: hidden;
+  animation: growBar 1s ease-in-out forwards;
+  border-radius: 16px;
+  background-color: #009688;
+}
+.skills-data > .java > div {
+  width: 60%;
+  max-width: 100%;
+  overflow: hidden;
+  animation: growBar 1s ease-in-out forwards;
+  border-radius: 16px;
+  background-color: #009688;
+}
+.skills-data > .sql > div {
+  width: 80%;
+  max-width: 100%;
+  overflow: hidden;
+  animation: growBar 1s ease-in-out forwards;
+  border-radius: 16px;
+  background-color: #009688;
+}
+
+@keyframes growBar {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+/* Language info */
+.languages-info {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.language-info > div {
+  width: 100%;
+  height: 10px;
+  border-radius: 16px;
+  background-color: #f1f1f1;
+}
+.english > div {
+  width: 70%;
+  height: 10px;
+  border-radius: 16px;
+  background-color: #009688;
+}
+.marathi > div {
+  width: 90%;
+  height: 10px;
+  border-radius: 16px;
+  background-color: #009688;
+}
+.hindi > div {
+  width: 80%;
+  height: 10px;
+  border-radius: 16px;
+  background-color: #009688;
+}
+/* Right info */
+.right-info {
+  flex-basis: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.summary-info {
+  background: white;
+  border: transparent;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 3px #c6c5c5;
+}
+.summary,
+.education,
+.project {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.summary > h2,
+.education > h2,
+.project > h2 {
+  color: #757575;
+  font-weight: 100;
+  font-size: 36px;
+}
+.summary > i,
+.education > i,
+.project > i {
+  font-size: 36px;
+}
+.short-info {
+  padding: 0 20px;
+}
+.short-info > p {
+  color: black;
+}
+/* Education info */
+.education-info {
+  background-color: white;
+  border: transparent;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 3px #c6c5c5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info-education {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mtech,
+.btech,
+.collage {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.year {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+.year > p {
+  color: #009688;
+}
+/* Project info */
+.project-info {
+  background-color: white;
+  border: transparent;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 3px #c6c5c5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info-project {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project1,
+.project2,
+.project3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.info-project > div {
+  transition: transform 0.3s ease-in-out;
+}
+.info-project > div:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-info,
+  .right-info {
+    flex-basis: 100%;
+  }
+
+  .image img {
+    height: auto;
+  }
+
+  .name > h2 {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .resume-btn {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 2%;
+  }
+}
