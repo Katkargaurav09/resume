@@ -344,6 +344,10 @@ i {
 .info-project > div:hover {
   transform: translateY(-5px);
 }
+.fa-download,
+.resume-btn1 {
+  display: none;
+}
 
 /* Responsive */
 
@@ -358,17 +362,23 @@ i {
   }
 
   .image img {
-    height: auto;
+    height: 100%;
   }
 
-  .name > h2 {
-    position: static;
-    text-align: center;
-    margin-top: 10px;
-  }
   .resume-btn {
-    right: 50%;
+    display: none;
+  }
+  .resume-btn1 {
+    display: block;
+    position: fixed;
+    right: 10%;
     transform: translateX(50%);
     bottom: 2%;
+  }
+  .fa-download {
+    display: block;
+    font-size: 25px;
+    color: #424242;
+    margin: 0 auto;
   }
 }
