@@ -330,7 +330,8 @@ i {
 }
 .project1,
 .project2,
-.project3 {
+.project3,
+.project4 {
   padding: 10px;
   display: flex;
   flex-direction: column;
