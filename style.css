@@ -331,7 +331,9 @@ i {
 .project1,
 .project2,
 .project3,
-.project4 {
+.project4,
+.project5,
+.project6 {
   padding: 10px;
   display: flex;
   flex-direction: column;
