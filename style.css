@@ -199,6 +199,14 @@ i {
   border-radius: 16px;
   background-color: #009688;
 }
+.skills-data > .j2ee > div {
+  width: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  animation: growBar 1s ease-in-out forwards;
+  border-radius: 16px;
+  background-color: #009688;
+}
 
 @keyframes growBar {
   from {
