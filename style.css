@@ -132,18 +132,18 @@ i {
   border-bottom: 1px solid #ccc;
 }
 .skills,
-.languages {
+.languages, .certificate {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .skills > p,
-.languages > p {
+.languages > p, .certificate > p {
   font-size: 18px;
   font-weight: bold;
 }
 .skills-data,
-.language-info {
+.language-info, .certificate-info {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -336,6 +336,7 @@ i {
   flex-direction: column;
   gap: 20px;
 }
+.project0,
 .project1,
 .project2,
 .project3,
